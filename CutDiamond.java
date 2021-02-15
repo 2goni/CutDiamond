@@ -1,10 +1,13 @@
+import java.util.Scanner;
 
 public class CutDiamond {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		String star = "*";
 		String dash = "-";
-		int num = 5;
+		System.out.println("다이아몬드의 세로 길이의 반을 입력해주세요");
+		int num = sc.nextInt();
 		for (int i=0; i<num; i++) {
 			for (int j=(-num+i); j<num; j++) {
 				System.out.print(" ");
